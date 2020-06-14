@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+* {transition: 0.2s ease-in-out;}
+button:focus {outline: none;}
+
+.main-block {
+  margin-right: auto;
+  margin-left: auto;
+  width: 60%;
+  position: relative;
+  top: 50px;
+  border: 2px solid transparent;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 20pt;
+  
+  background: white;
+  border: 2px solid transparent;
+}
+.slider > button {
+  width: 50px;
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 8px;
+  font-size: 22pt;
+  color: #888888;
+  border-radius: 10px;
+}
+.slider > button i {transform: translateX(0px)}
+.slider > button:nth-of-type(1) {transform: translateX(-5px);}
+.slider > button:nth-of-type(2) {transform: translateX(5px);}
+.slider > button:hover {
+  background: rgba(136, 136, 136, 0.5);
+  color: white;
+  border-radius: 10px;
+}
+
+.slider-column-1 div {
+  width: 500px;
+  height: 260px;
+  flex-grow: 1;
+  padding: 6px;
+  border: 0px solid white;
+  border-radius: 10px;
+  display: none;
+  transform: translateX(0px);
+}
+.slider-column-1 div:nth-of-type(1) {
+  display: block;
+  background-image: linear-gradient(to bottom left, rgb(16, 209, 203), rgb(30, 210, 186), rgb(43, 212, 170), rgb(57, 213, 153), rgb(71, 214, 136), rgb(84, 216, 120), rgb(98, 217, 103), rgb(111, 219, 87), rgb(125, 220, 70), rgb(139, 221, 53), rgb(152, 223, 37), rgb(166, 224, 20));
+}
+.slider-column-1 div:nth-of-type(2) {
+  background-image: linear-gradient(to left bottom, #ea00ff, #ff00bc, #ff007b, #ff0041, #ea0000);
+}
+.slider-column-1 div:nth-of-type(3) {
+  background-image: linear-gradient(to top, rgb(25, 40, 176), rgb(41, 41, 173), rgb(58, 41, 170), rgb(74, 42, 166), rgb(90, 43, 163), rgb(106, 43, 160), rgb(123, 44, 157), rgb(139, 44, 154), rgb(155, 45, 151), rgb(171, 46, 147), rgb(188, 46, 144), rgb(204, 47, 141));
+}
+.slider-column-1 div:nth-of-type(4) {
+  background-image: linear-gradient(to right, #e92254, #f95a2d, #f38e00, #d9bf00, #a8eb12);
+}
+.slider-column-1 div:nth-of-type(5) {
+  background-image: linear-gradient(to bottom, #2b3dce, #0074f2, #009efc, #00c4f4, #00e5ea);
+}
+
+.slider-column-2 {
+  width: 500px;
+  border: 2px solid transparent;
+  padding: 0px;
+  height: 25px;
+  text-align: center;
+  position: absolute;
+  top: 243px;
+}
+.slider-column-2 div {
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 10px;
+  height: 10px;
+  border: 2.5px solid white;
+  border-radius: 100%;
+  display: inline-block;
+  background: transparent;
+}
+.slider-column-2 div:nth-of-type(1) {background: white;}
